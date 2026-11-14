@@ -262,7 +262,8 @@ function move(dir) {
 function shop() {
     hideAll();
     const store = document.getElementById("store");
-    if (store) store.classList.remove("hidden");
+    if (store) store.classList.add("hidden"); // Вправлено на видалення класу hidden
+    store.classList.remove("hidden");
 }
 
 function buyHealth() {
